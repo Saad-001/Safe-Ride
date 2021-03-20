@@ -5,6 +5,9 @@ import { userContext } from '../../App';
 
 const RideDetails = () => {
     const [loggedInUser, setLoggedInUser] = useContext(userContext);
+    
+        // i was forced to console this for deploying site in netlify
+        console.log(setLoggedInUser)
 
     const [searchValue, setSearchValue] = useState({
         picFrom: "",

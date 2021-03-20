@@ -15,6 +15,9 @@ if (!firebase.apps.length) {
 
 const CreateAccount = () => {
     const [loggedInUser, setLoggedInUser] = useContext(userContext);
+    // i was forced to console this for deploying site in netlify
+    console.log(loggedInUser)
+    
     const history = useHistory();
     const location = useLocation();
     const { from } = location.state || { from: { pathname: "/rideDetails" } };
@@ -74,7 +77,6 @@ const CreateAccount = () => {
                     setUser(newUserInfo)
                     setLoggedInUser(signedInUser)
                     history.replace(from)
-                    console.log(res.user)
                 })
                 .catch((error) => {
                     const newUserInfo = { ...user }
