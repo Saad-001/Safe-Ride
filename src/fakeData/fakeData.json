@@ -1,0 +1,21 @@
+[   
+    {
+        "name" : "BIKE",
+        "image" : "https://www.daily-sun.com/assets/news_images/2019/05/03/thumbnails/Ride_sharing-ds.jpg"
+    },
+
+    {
+        "name" : "CAR",
+        "image" : "https://i2.wp.com/www.theengineblock.com/wp-content/uploads/2019/09/ridesharing_future.png?fit=800%2C445&ssl=1"
+    },
+
+    {
+        "name" : "BUS",
+        "image" : "https://blog.capterra.com/wp-content/uploads/2018/06/HEAD-How_Ridesharing_Partnerships_Can_Improve_Your_Event_Transportation_Hero_no_text.png"
+    },
+
+    {
+        "name" : "TRAIN",
+        "image" : "https://static.toiimg.com/photo/61202140.cms"
+    }
+]

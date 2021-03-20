@@ -1,0 +1,30 @@
+.search-div{
+    background-color: whitesmoke;
+}
+
+.search-div input{
+    width: 300px;
+    padding: 5px;
+    padding-left: 10px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.search-div button{
+    margin-top: 20px;
+    background-color: salmon;
+    padding: 5px;
+    width: 300px;
+    color: white;
+    margin-bottom: 20px;
+    border: none;
+    font-weight: bold;
+}
+
+.child-div{
+    margin-left: 20px;
+}
+
+.map-img{
+    height: 400px;  
+}

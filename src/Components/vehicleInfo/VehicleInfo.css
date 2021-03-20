@@ -1,0 +1,16 @@
+.vehicle-img{
+    width: 255px;
+    border-radius: 5px;
+}
+
+.vehicle-img img{
+    height: 200px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.vehicle-title{
+    text-align: center;
+}
+
+
