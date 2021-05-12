@@ -88,30 +88,35 @@ const CreateAccount = () => {
         event.preventDefault()
     }
     return (
-        <div className="container pt-5 pb-5">
-            <h4 className="mb-5">Create an account</h4>
-            <Form onSubmit={handleSubmit}>
-                <Form.Group controlId="formBasicName">
-                    <Form.Label>Name</Form.Label>
-                    <Form.Control type="text" onBlur={handleBlur} name="name" required placeholder="Enter your name" />
-                </Form.Group>
-                <Form.Group controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" onBlur={handleBlur} name="email" required placeholder="Enter email" />
-                    <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
-                    </Form.Text>
-                </Form.Group>
-                <Form.Group controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" onBlur={handleBlur} name="password" required placeholder="Password" />
-                </Form.Group>
-                <Button variant="primary" type="submit">Create account</Button>
-            </Form>
-                <h4 style={{color: 'red'}} className="mt-3">{user.error}</h4>
-            <div className="logo-div mt-5 d-flex">
-                <p style={{ display: "inlineBlock" }} className="mt-2">or sign in with</p>
-                <img onClick={handleGoogleSignIn} className="" src={googleLogo} alt="" />
+        <div style={{backgroundColor: "rgb(197, 238, 249)"}} className="container-fluid pt-5 pb-5">
+            <div className="container">
+                <h4 className="mb-5">Create an account</h4>
+                <Form onSubmit={handleSubmit}>
+                    <Form.Group controlId="formBasicName">
+                        <Form.Label>Name</Form.Label>
+                        <Form.Control type="text" onBlur={handleBlur} name="name" required placeholder="Enter your name" />
+                    </Form.Group>
+                    <Form.Group controlId="formBasicEmail">
+                        <Form.Label>Email address</Form.Label>
+                        <Form.Control type="email" onBlur={handleBlur} name="email" required placeholder="Enter email" />
+                        <Form.Text className="text-muted">
+                            We'll never share your email with anyone else.
+                        </Form.Text>
+                    </Form.Group>
+                    <Form.Group controlId="formBasicPassword">
+                        <Form.Label>Password</Form.Label>
+                        <Form.Control type="password" onBlur={handleBlur} name="password" required placeholder="Password" />
+                    </Form.Group>
+                    <Button variant="primary" type="submit">Create account</Button>
+                </Form>
+                    <h4 style={{color: 'red'}} className="mt-3">{user.error}</h4>
+                <div className="logo-div mt-5 d-flex">
+                    <p style={{ display: "inlineBlock" }} className="mt-2">or sign in with</p>
+                    <img onClick={handleGoogleSignIn} style={{cursor: "pointer"}} className="" src={googleLogo} alt="" />
+                </div>
+            </div>
+            <div style={{height: "35px"}}>
+
             </div>
         </div>
     );

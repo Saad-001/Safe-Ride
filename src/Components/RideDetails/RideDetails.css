@@ -1,5 +1,6 @@
 .search-div{
     background-color: whitesmoke;
+    height: 450px;
 }
 
 .search-div input{
@@ -25,6 +26,3 @@
     margin-left: 20px;
 }
 
-.map-img{
-    height: 400px;  
-}

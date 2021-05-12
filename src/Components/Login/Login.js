@@ -64,23 +64,25 @@ const Login = () => {
         event.preventDefault()
     }
     return (
-        <div className="container pt-5 pb-5" style={{backgroundColor: "", height: "100vh" }}>
+        <div className="container-fluid pt-5 pb-5" style={{height: "100vh" ,backgroundColor: "rgb(197, 238, 249)"}}>
+            <div className="container">
             <h2>Log in</h2>
-            <Form>
-                <Form.Group controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" onBlur={handleBlur} name="email" required placeholder="Enter email" />
-                    <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
-                    </Form.Text>
-                </Form.Group>
-                <Form.Group controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" onBlur={handleBlur} name="password" required placeholder="Password" />
-                </Form.Group>
-                <Button variant="primary" onClick={handleSubmit} type="submit">Log in</Button>
-                <p className="mt-4">Don't have an account? <a style={{color: "slateBlue", fontWeight: "bold"}} href="/createAccount">create an account</a></p>
-            </Form>
+                <Form>
+                    <Form.Group controlId="formBasicEmail">
+                        <Form.Label>Email address</Form.Label>
+                        <Form.Control type="email" onBlur={handleBlur} name="email" required placeholder="Enter email" />
+                        <Form.Text className="text-muted">
+                            We'll never share your email with anyone else.
+                        </Form.Text>
+                    </Form.Group>
+                    <Form.Group controlId="formBasicPassword">
+                        <Form.Label>Password</Form.Label>
+                        <Form.Control type="password" onBlur={handleBlur} name="password" required placeholder="Password" />
+                    </Form.Group>
+                    <Button variant="primary" onClick={handleSubmit} type="submit">Log in</Button>
+                    <p className="mt-4">Don't have an account? <a style={{color: "slateBlue", fontWeight: "bold"}} href="/createAccount">create an account</a></p>
+                </Form>
+            </div>
         </div>
     );
 };

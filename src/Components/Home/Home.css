@@ -1,7 +1,10 @@
-.main-container{
-
+*{
+    box-sizing: border-box;
 }
+/* .vehicleDiv{
+    margin-top: px;
+} */
 
-.info-div{
-    padding-top: 80px;
+.div{
+    padding: 135px 0px 193px 0px;
 }

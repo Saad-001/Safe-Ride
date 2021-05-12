@@ -1,16 +1,23 @@
-.vehicle-img{
-    width: 255px;
-    border-radius: 5px;
+*{
+    box-sizing: border-box;
 }
+
+.vehicle:hover{
+  
+}
+/* .vehicle-img{
+    border-radius: 10px;
+    
+} */
 
 .vehicle-img img{
-    height: 200px;
-    width: 250px;
-    border-radius: 5px;
-}
-
-.vehicle-title{
-    text-align: center;
+    width: 150px;
+    height: 150px;
 }
 
 
+/* @media screen and (max-width: 567px) {
+    .vehicle{
+       width: 100vw;
+    }
+}  */

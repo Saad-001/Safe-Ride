@@ -6,18 +6,20 @@ const VehiclesInfo = (props) => {
     const { name, image } = props.info;
 
     return (
-        <div className="col-md-3 mt-3 mb-3 ">
-            <div style={{ backgroundColor: "white" }} className="border-info">
-                <a style={{ textDecoration: "none", display: "inline-block" }} href="/login">
-                    <div className="vehicle-img">
-                        <img src={image} alt="" />
-                    </div>
-                    <div className="vehicle-title pt-1 pb-1">
-                        <h4>{name}</h4>
-                    </div>
-                </a>
-            </div>
-        </div>
+            <div className="col-lg-3 vehicle">
+               <div style={{backgroundColor: "rgba(0, 50, 71, 0.5)"}} className="m-1 rounded" >
+                <a style={{ textDecoration: "none"}} className="text-warning fw-bolder" href="/login">
+                        <div className="p-3 text-center vehicle-img">
+                            <div className="icon">
+                                <img className="img-fluid" src={image} alt="" />
+                            </div>
+                        </div>
+                        <div className="text-center">
+                            <h3 className="p-2">{name}</h3>
+                        </div>
+                    </a>
+               </div>
+            </div>       
     );
 };
 
